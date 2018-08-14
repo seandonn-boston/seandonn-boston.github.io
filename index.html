@@ -1,77 +1,226 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>SeanDonn.io</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/styles/materialize.min.css"  media="screen,projection"/>
+      <!--Import font face -->
+      <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+      <!-- seandonn.io CSS -->
       <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
-
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-      <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <div class="navbar-fixed">
-        <nav class="row">
-          <div class="nav-wrapper col s12">
-            <a href="#" class="brand-logo left">Logo</a>
-            <ul id="nav-mobile" class="hide-on-med-and-down left">
-              <li><a href="code.html">Code Portfolio</a></li>
-              <li><a href="design.html">Design Portfolio</a></li>
-              <li><a href="resume.html">Resume</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col s9">
-          <div class="container">
-            <h1>SeanDonn Portfolio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi adipisci quasi nemo veniam dolor delectus natus esse ullam ipsa architecto, rerum eligendi, culpa perspiciatis perferendis enim, vitae molestias similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, impedit, veritatis? Necessitatibus fugit vel vero nulla cumque exercitationem autem modi natus impedit distinctio voluptates laudantium assumenda ut nam, nostrum, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus error vel quidem, eum necessitatibus qui officia labore reiciendis numquam saepe voluptas praesentium nihil. Officia reiciendis, non nostrum, doloribus similique quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, blanditiis, inventore. Dolorum magnam, incidunt consequatur omnis labore sapiente rem ducimus sunt sequi eius iusto praesentium ipsum, modi molestias sed quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea sint nesciunt nihil repellendus consequatur animi sit ratione, ipsam quo aliquam perspiciatis beatae eaque totam ad, voluptatibus delectus iusto obcaecati.</p>
-          </div>
+      <div class="nav-section">
+        <div class="navbar-fixed row">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center">Logo</a>
+              <a href="#" data-target="mobile-collapse" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="left hide-on-med-and-down">
+                <li><a href="#code-section">Code</a></li>
+                <li><a href="#design-section">Design</a></li>
+              </ul>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="waves-effect waves-light btn">Resume<i class="material-icons right">file_download</i></a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <aside class="col s3">
-          <table class="centered highlight">
-            <thead>
-              <tr>
-                  <th>Skills</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>HTML5</td>
-              </tr>
-              <tr>
-                <td>CSS3</td>
-              </tr>
-              <tr>
-                <td>JavaScript</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-              <tr>
-                <td>etc</td>
-              </tr>
-            </tbody>
-          </table>
-        </aside>
+        <ul class="sidenav" id="mobile-collapse">
+          <li><a href="#code-section" class="center">Code</a></li>
+          <li><a href="#design-section" class="center">Design</a></li>
+          <li><a href="assets/docs/SeanDonnellanResume.pdf" class="waves-effect waves-light btn">Resume<i class="material-icons right">file_download</i></a></li>
+        </ul>
       </div>
+      <main>
+        <div class="row">
+          <div class="col s10 main-content">
+            <div class="container">
+              <img class="responsive-img sean" src="assets/images/sean.jpg" alt="Profile picture of Sean">
+              <div class="about-me">
+                <h1 class="text-outliner intro">Hey, I'm <span class="hover-link">Sean</span>. I am a Full Stack Web Developer, Graphic Designer, and Musician.</h1>
+                <p class="col offset-s4 s8">I began thinking like a developer as early as high school when I taught myself how to program custom MIDI maps for my DJing equipment. In college, I applied these logical thinking skills and detail-oriented nature to pursue a Graphic Design major at Roger Williams University, where I ultimately studied UX design. Although I earned my B.A. in Graphic Design Communications in Dec 2015, I was hired out of college as a software engineer for Gartner where my primary responsibilities were focused on the front-end. Gartner was without a doubt a struggle: after a restructure occurred internally in the company, I found myself in a position of much more responsibility and attempted to teach myself dozens of different languages and tools all at once without any proper guidance.</p>
+                <p class="col offset-s4 s8">After over a year at Gartner, I decided it was time for me to pursue a formal education in the web development field, so I chose General Assembly's Web Development Immersive course because it will cover several of the languages and tools I was struggling to learn on my own, such as Github, JavaScript, jQuery, Ruby, Ember, and much more. My goal for the future is to live in Boston while working for a small or medium sized company which will utilize all I have to offer by way of Graphic Design, UX Design, and Full Stack Web Development.</p>
+              </div>
+              <div id="code-section" class="code">
+                <div class="row">
+                  <h1 class="text-outliner">Code</h1>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator ">Project 1<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Project 1<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator">Project 2<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Project 2<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator ">Project 3<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Project 3<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="design-section" class="design">
+                <div class="row">
+                  <h1 class="text-outliner">Design</h1>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator ">Design 1<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Design 1<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator">Design 2<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Design 2<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card sticky-action hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/dog.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator ">Design 3<i class="material-icons right">more_vert</i></span>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title ">Design 3<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="col s2 skills-aside">
+            <table class="centered highlight">
+              <thead>
+                <tr>
+                  <th>Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML5</td>
+                </tr>
+                <tr>
+                  <td>CSS3</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                </tr>
+                <tr>
+                  <td>final</td>
+                </tr>
+              </tbody>
+            </table>
+          </aside>
+        </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="assets/scripts/materialize.min.js"></script>
+      <!-- seandonn.io JS -->
+      <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
     </body>
 </html>

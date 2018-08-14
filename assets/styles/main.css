@@ -1,3 +1,146 @@
-nav .brand-logo {
-  position: initial;
+/*
+Colors
+#F4F2ED - light grey
+#3B3A40 - dark grey
+#FF4C7A - Bright Pink
+#C1DCA0 - Pastel Green
+#D5EEF1 - Pastel Blue
+
+Fonts
+font-family: 'Alegreya', serif;
+font-family: 'Lato', sans-serif;
+*/
+
+/* Helpers */
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya', serif;
+}
+.text-outliner {
+  color: #3B3A40;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-text-stroke-width: 0.05vw;
+  -webkit-text-stroke-color: #F4F2ED;
+}
+body, nav, main, .card {
+  background-color: #3B3A40;
+  color: #F4F2ED;
+}
+.card, .sidenav {
+  background-color: #F4F2ED;
+  color: #3B3A40;
+}
+.intro {
+  transform:  rotateX(45deg) /* Rotates an element around the horizontal axis */
+              rotateY(45deg) /* Rotates an element around the vertical axis */
+              rotateZ(0deg) /* Rotates an element around the z-axis (flat spin) */
+              translateX(0px) /* Move an element horizontally */
+              translateY(0px) /* Move an element vertically */
+              translateZ(0px) /* Move an element on the z-axis (forward backward) */
+              skewX(0deg) /* Skews an element in the horizontal direction */
+              skewY(0deg); /* Skews an element in the vertical direction */
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.loaded {
+  transform:  rotateX(0deg) /* Rotates an element around the horizontal axis */
+              rotateY(0deg) /* Rotates an element around the vertical axis */
+              rotateZ(0deg) /* Rotates an element around the z-axis (flat spin) */
+              translateX(0px) /* Move an element horizontally */
+              translateY(0px) /* Move an element vertically */
+              translateZ(0px) /* Move an element on the z-axis (forward backward) */
+              skewX(0deg) /* Skews an element in the horizontal direction */
+              skewY(0deg); /* Skews an element in the vertical direction */
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Styles */
+body {
+  box-sizing: border-box;
+}
+.card a {
+  color: #FF4C7A !important;
+}
+h1 {
+  font-size: 6vw;
+  font-weight: 500;
+}
+.btn {
+  background-color: #FF4C7A;
+}
+.skills-aside {
+  position: fixed;
+  right: 0 !important;
+}
+.drag-target {
+  width: 0;
+}
+.sean {
+  pointer-events: none;
+  display: block;
+  position: fixed;
+  width: 50%;
+  height: calc(100vh - 120px);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+  -moz-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+  -ms-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+  -o-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+  transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+}
+.active {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotateY(0deg);
+  -moz-transform: translate3d(0, 0, 0) rotateY(0deg);
+  -ms-transform: translate3d(0, 0, 0) rotateY(0deg);
+  -o-transform: translate3d(0, 0, 0) rotateY(0deg);
+  transform: translate3d(0, 0, 0) rotateY(0deg);
+}
+
+/* Animations */
+.hover-link {
+  animation: colorcycle 3s linear infinite;
+  -webkit-animation: colorcycle 3s linear infinite; /* Chrome and Safari */
+}
+@keyframes colorcycle {
+  0% {
+    -webkit-text-stroke-color: #AAFF00;
+  }
+  25% {
+    -webkit-text-stroke-color: #FFAA00;
+  }
+  50% {
+    -webkit-text-stroke-color: #FF00AA;
+  }
+  75% {
+    -webkit-text-stroke-color: #AA00FF;
+  }
+  100% {
+    -webkit-text-stroke-color: #AAFF00;
+  }
+}
+@-webkit-keyframes colorcycle {
+  0% {
+    -webkit-text-stroke-color: #AAFF00;
+  }
+  25% {
+    -webkit-text-stroke-color: #FFAA00;
+  }
+  50% {
+    -webkit-text-stroke-color: #FF00AA;
+  }
+  75% {
+    -webkit-text-stroke-color: #AA00FF;
+  }
+  100% {
+    -webkit-text-stroke-color: #AAFF00;
+  }
 }
