@@ -3,12 +3,14 @@
     <head>
       <title>SeanDonn.io</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="assets/styles/materialize.min.css"  media="screen,projection"/>
       <!--Import font face -->
       <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
       <!-- seandonn.io CSS -->
       <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
     </head>
@@ -17,11 +19,12 @@
         <div class="navbar-fixed row">
           <nav>
             <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">SD</a>
+              <a href="#" class="brand-logo center"><img src="assets/images/sd-logo-color.svg" alt="SD Logo"></a>
               <a href="#" data-target="mobile-collapse" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="left hide-on-med-and-down">
-                <li><a href="#code-title">Code</a></li>
-                <li><a href="#design-section">Design</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#code-section">Code</a></li>
+                <li><a href="#contact-section">Contact</a></li>
               </ul>
               <ul class="right hide-on-med-and-down">
                 <li><a href="assets/docs/SeanDonnellanResume.pdf" class="waves-effect waves-light btn" target="_blank">Resume<i class="material-icons right">file_download</i></a></li>
@@ -41,15 +44,18 @@
             <div class="container">
               <img class="responsive-img sean" src="assets/images/sean.jpg" alt="Profile picture of Sean">
               <div class="about-me">
-                <h1 class="text-outliner intro">Hey, I'm <span class="hover-link">Sean</span>. I am a Full Stack Web Developer, Graphic Designer, and Musician.</h1>
-                <p class="col offset-s4 s8">I began thinking like a developer as early as high school when I taught myself how to program custom MIDI maps for my DJing equipment. In college, I applied these logical thinking skills and detail-oriented nature to pursue a Graphic Design major at Roger Williams University, where I ultimately studied UX design. Although I earned my B.A. in Graphic Design Communications in Dec 2015, I was hired out of college as a software engineer for Gartner where my primary responsibilities were focused on the front-end. Gartner was without a doubt a struggle: after a restructure occurred internally in the company, I found myself in a position of much more responsibility and attempted to teach myself dozens of different languages and tools all at once without any proper guidance.</p>
-                <p class="col offset-s4 s8">After over a year at Gartner, I decided it was time for me to pursue a formal education in the web development field, so I chose General Assembly's Web Development Immersive course because it will cover several of the languages and tools I was struggling to learn on my own, such as Github, JavaScript, jQuery, Ruby, Ember, and much more. My goal for the future is to live in Boston while working for a small or medium sized company which will utilize all I have to offer by way of Graphic Design, UX Design, and Full Stack Web Development.</p>
+                <div class="intro-wrapper">
+                  <h1 class="text-outliner intro">Hey, I'm <span class="hover-link">Sean</span>. I am a Full Stack Web Developer, Graphic Designer, and Musician.</h1>
+                </div>
+                <p class="col offset-s4 s8" id="about-section">I began thinking like a developer as early as high school when I taught myself how to program custom MIDI maps for my DJing equipment. In college, I applied my logical thinking skills and detail-oriented nature to pursue a Graphic Design major at Roger Williams University, where I ultimately studied UX design. I earned my B.A. in Graphic Design Communications in Dec 2015 and was hired immediately out of college as a software engineer for Gartner where my primary responsibilities were focused on the front-end. Gartner was without a doubt a struggle: after a restructure occurred internally in the company, I found myself in a position of much more responsibility and attempted to teach myself dozens of different languages and tools all at once without any proper guidance.</p>
+                <p class="col offset-s4 s8">After over a year at Gartner, I decided it was time for me to pursue a formal education in the web development field, so I chose General Assembly's Web Development Immersive course because it taught me several of the languages and tools I was struggling to learn on my own, such as Github, JavaScript, jQuery, Ruby, Ember, and much more. Now complete, I feel confident in my abilities as a Full Stack Web Developer and UI/UX Designer and I am eager to begin a new chapter in Boston.</p>
+                <p class="col offset-s4 s8">My goal for the future is to live in Boston while working for a small or medium sized company which will utilize all I have to offer by way of Graphic Design, UX Design, and Full Stack Web Development.</p>
               </div>
               <div id="code-section" class="code">
                 <div class="row">
-                  <h1 class="text-outliner" id="code-title">Code</h1>
+                  <h1 class="text-outliner">Code</h1>
                   <div class="col s12 m6">
-                    <div class="card sticky-action hoverable">
+                    <div class="card medium sticky-action hoverable">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/images/into.png" alt="Family sitting in front of a TV">
                       </div>
@@ -69,7 +75,7 @@
                     </div>
                   </div>
                   <div class="col s12 m6">
-                    <div class="card sticky-action hoverable">
+                    <div class="card medium sticky-action hoverable">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/images/jot.jpg" alt="Writing a to do list">
                       </div>
@@ -89,7 +95,7 @@
                     </div>
                   </div>
                   <div class="col s12 m6">
-                    <div class="card sticky-action hoverable">
+                    <div class="card medium sticky-action hoverable">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/images/sserpdrow.jpg" alt="">
                       </div>
@@ -107,6 +113,31 @@
                         <p>Built with MongoDB, Mongoose, Handlebars, Bootstrap, Express.js, and more</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div id="contact-section" class="contact">
+                <div class="row">
+                  <h1 class="text-outliner col s12">Contact</h1>
+                  <div class="col s3 valign-wrapper">
+                    <p class="center-align">
+                      <a href="mailto:sean@seandonnellan.com?Subject=I%20visited%20your%20website%20and%20would%20like%20to%20get%20in%20touch"><i class="fas fa-envelope"></i></a>
+                    </p>
+                  </div>
+                  <div class="col s3 valign-wrapper">
+                    <p class="center-align">
+                      <a href="tel:1-603-714-1933"><i class="fas fa-phone"></i></a>
+                    </p>
+                  </div>
+                  <div class="col s3 valign-wrapper">
+                    <p class="center-align">
+                      <a href="https://www.linkedin.com/in/seandonn/"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                  </div>
+                  <div class="col s3 valign-wrapper">
+                    <p class="center-align">
+                      <a href="https://github.com/seandonn-boston"><i class="fab fa-github"></i></a>
+                    </p>
                   </div>
                 </div>
               </div>
