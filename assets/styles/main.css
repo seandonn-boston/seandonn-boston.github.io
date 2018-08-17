@@ -18,12 +18,6 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya', serif;
 }
-.text-outliner {
-  color: #3B3A40;
-  -webkit-text-fill-color: rgba(0,0,0,0);
-  -webkit-text-stroke-width: 0.05vw;
-  -webkit-text-stroke-color: #F4F2ED;
-}
 body, nav, main, .card {
   background-color: #3B3A40;
   color: #F4F2ED;
@@ -70,22 +64,18 @@ body {
 .card a {
   color: #FF4C7A !important;
 }
-h1 {
-  font-size: 6vw;
-  font-weight: 500;
-}
 .btn {
   background-color: #FF4C7A;
-}
-.skills-aside {
-  position: fixed;
-  right: 0 !important;
 }
 .drag-target {
   width: 0;
 }
-.brand-logo img {
-  height: inherit;
+nav .brand-logo {
+  position: initial;
+}
+.logo-img {
+  width: 64px;
+  display: inline-block;
 }
 .sean {
   pointer-events: none;
@@ -160,5 +150,75 @@ h1 {
   }
   100% {
     -webkit-text-stroke-color: #AAFF00;
+  }
+}
+
+/* Screen Size Media Queries */
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .text-outliner {
+    color: #3B3A40;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: #F4F2ED;
+  }
+  h1 {
+    font-size: 12vw;
+    font-weight: 500;
+  }
+  .skills-aside {
+    position: initial;
+    right: initial;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 601px) {
+  .text-outliner {
+    color: #3B3A40;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: #F4F2ED;
+  }
+  h1 {
+    font-size: 10vw;
+    font-weight: 500;
+  }
+  .skills-aside {
+    position: fixed;
+    right: 0 !important;
+  }
+}
+/* Screen small */
+@media only screen and (min-width: 993px) {
+  .text-outliner {
+    color: #3B3A40;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: #F4F2ED;
+  }
+  h1 {
+    font-size: 8vw;
+    font-weight: 500;
+  }
+  .skills-aside {
+    position: fixed;
+    right: 0 !important;
+  }
+}
+/* Screen Large */
+@media only screen and (min-width: 1201px) {
+  .text-outliner {
+    color: #3B3A40;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 0.05vw;
+    -webkit-text-stroke-color: #F4F2ED;
+  }
+  h1 {
+    font-size: 6vw;
+    font-weight: 500;
+  }
+  .skills-aside {
+    position: fixed;
+    right: 0 !important;
   }
 }
