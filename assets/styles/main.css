@@ -73,10 +73,6 @@ body {
 nav .brand-logo {
   position: initial;
 }
-.logo-img {
-  width: 64px;
-  display: inline-block;
-}
 .sean {
   pointer-events: none;
   display: block;
@@ -167,8 +163,14 @@ nav .brand-logo {
     font-weight: 500;
   }
   .skills-aside {
+    height: initial;
+    overflow-y: initial;
     position: initial;
     right: initial;
+  }
+  .logo-img {
+    width: 54px;
+    display: inline-block;
   }
 }
 /* Tablet */
@@ -184,8 +186,14 @@ nav .brand-logo {
     font-weight: 500;
   }
   .skills-aside {
+    height: calc(100vh - 84px);
+    overflow-y: auto;
     position: fixed;
     right: 0 !important;
+  }
+  .logo-img {
+    width: 64px;
+    display: inline-block;
   }
 }
 /* Screen small */
@@ -201,8 +209,14 @@ nav .brand-logo {
     font-weight: 500;
   }
   .skills-aside {
+    height: calc(100vh - 84px);
+    overflow-y: auto;
     position: fixed;
     right: 0 !important;
+  }
+  .logo-img {
+    width: 64px;
+    display: inline-block;
   }
 }
 /* Screen Large */
@@ -218,7 +232,13 @@ nav .brand-logo {
     font-weight: 500;
   }
   .skills-aside {
+    height: calc(100vh - 84px);
+    overflow-y: auto;
     position: fixed;
     right: 0 !important;
+  }
+  .logo-img {
+    width: 64px;
+    display: inline-block;
   }
 }
