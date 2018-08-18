@@ -19,8 +19,10 @@
         <div class="navbar-fixed row">
           <nav>
             <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">SD</a>
-              <a href="#" data-target="mobile-collapse" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a href="#" class="brand-logo left">
+                <img class="logo-img" src="assets/images/sd-logo-white.svg" alt="Sean Donnellan's Logo">
+              </a>
+              <a href="#" data-target="mobile-collapse" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
               <ul class="left hide-on-med-and-down">
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#code-section">Code</a></li>
@@ -33,14 +35,16 @@
           </nav>
         </div>
         <ul class="sidenav" id="mobile-collapse">
-          <li><a href="#code-title" class="center">Code</a></li>
-          <li><a href="#design-section" class="center">Design</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#code-section">Code</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="#skills-section" class="hide-on-med-and-up">Skills</a></li>
           <li><a href="assets/docs/SeanDonnellanResume.pdf" class="waves-effect waves-light btn" target="_blank">Resume<i class="material-icons right">file_download</i></a></li>
         </ul>
       </div>
       <main>
         <div class="row">
-          <div class="col s10 main-content">
+          <div class="col s12 m10 main-content">
             <div class="container">
               <img class="responsive-img sean" src="assets/images/sean.jpg" alt="Profile picture of Sean">
               <div class="about-me">
@@ -202,7 +206,7 @@
               </div> -->
             </div>
           </div>
-          <aside class="col s2 skills-aside">
+          <aside class="col s12 m2 skills-aside" id="skills-section">
             <table class="centered highlight">
               <thead>
                 <tr>
