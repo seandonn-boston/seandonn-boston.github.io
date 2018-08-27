@@ -12,20 +12,89 @@ Fonts
 */
 
 /* Helpers */
+
+/*basic reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya', serif;
+  margin-top: initial;
+  margin-bottom: initial;
 }
+
 body, nav, main, .card {
   background-color: #3B3A40;
   color: #F4F2ED;
 }
+
+.icons, .skills {
+	width: 100%;
+	margin: 0 auto;
+  text-align: center;
+}
+
+.icons i, .skills i {
+	display: block;
+	font-size: 64px;
+	line-height: 100px;
+  width: 100px;
+	text-align: center;
+}
+
+.icons i:before, .skills i:before {
+  position: relative;
+  z-index: 10;
+}
+
+.icons a, .skills a {
+	text-decoration: none;
+	color: #3B3A40;
+  background: #F4F2ED;
+	display: inline-block;
+	margin: 20px;
+	border-radius: 32px;
+  position: relative;
+}
+
+.icons a:hover, .skills a:hover {
+  color: #F4F2ED;
+  background: #FF4C7A;
+}
+
+/*squircle curves*/
+.icons a:before, .icons a:after, .skills a:before, .skills a:after {
+	content: '';
+	position: absolute;
+  left: 0;
+  top: 0;
+	width: 100%;
+  height: 100%;
+	background: inherit;
+  /*Make a circle*/
+	border-radius: 100%;
+	/*Transform the circle into fish-eye shape*/
+	transform: scaleX(1.3) scaleY(1.075);
+	/*Clipping the left and right sides - 14px from the left and right*/
+	clip: rect(0, 72px, 100px, 28px);
+}
+/*duplicating the :before element*/
+.icons a:after, .skills a:after {
+	transform: scaleY(1.3) scaleX(1.075) rotate(90deg);
+}
+
 .card, .sidenav {
   background-color: #F4F2ED;
   color: #3B3A40;
 }
+
 .intro {
   transform:  rotateX(45deg) /* Rotates an element around the horizontal axis */
               rotateY(45deg) /* Rotates an element around the vertical axis */
@@ -39,10 +108,12 @@ body, nav, main, .card {
   -moz-transition: -moz-transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), transform 7s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .intro-wrapper {
   display: block;
-  height: calc(100vh - 128px);
+  height: initial;
 }
+
 .loaded {
   transform:  rotateX(0deg) /* Rotates an element around the horizontal axis */
               rotateY(0deg) /* Rotates an element around the vertical axis */
@@ -61,18 +132,32 @@ body, nav, main, .card {
 body {
   box-sizing: border-box;
 }
+
+.about-p {
+  float: none !important;
+  margin-bottom: 32px;
+}
+
+#about-section, .skills-section, .code-section, .contact-section {
+  padding-top: 80px;
+}
+
 .card a {
   color: #FF4C7A !important;
 }
+
 .btn {
   background-color: #FF4C7A;
 }
+
 .drag-target {
   width: 0;
 }
+
 nav .brand-logo {
   position: initial;
 }
+
 .sean {
   pointer-events: none;
   display: block;
@@ -88,7 +173,9 @@ nav .brand-logo {
   -ms-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
   -o-transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
   transform: translate3d(0, 200px, 0) rotateY(5deg) rotateZ(-5deg);
+  z-index: 10;
 }
+
 .active {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) rotateY(0deg);
@@ -97,23 +184,14 @@ nav .brand-logo {
   -o-transform: translate3d(0, 0, 0) rotateY(0deg);
   transform: translate3d(0, 0, 0) rotateY(0deg);
 }
-.contact p {
-  font-size: 72px;
-  width: 100%;
-  border: 0.05vw #F4F2ED solid;
-  border-radius: 15px;
-}
-.contact p a {
-  color: #F4F2ED;
-}
-.contact p a:hover {
-  color: #D5EEF1;
-}
+
 /* Animations */
 .hover-link {
   animation: colorcycle 3s linear infinite;
   -webkit-animation: colorcycle 3s linear infinite; /* Chrome and Safari */
+  z-index: 11;
 }
+
 @keyframes colorcycle {
   0% {
     -webkit-text-stroke-color: #AAFF00;
@@ -131,6 +209,7 @@ nav .brand-logo {
     -webkit-text-stroke-color: #AAFF00;
   }
 }
+
 @-webkit-keyframes colorcycle {
   0% {
     -webkit-text-stroke-color: #AAFF00;
@@ -158,16 +237,19 @@ nav .brand-logo {
     -webkit-text-stroke-width: 0.2vw;
     -webkit-text-stroke-color: #F4F2ED;
   }
+
   h1 {
     font-size: 12vw;
     font-weight: 500;
   }
+
   .skills-aside {
     height: initial;
     overflow-y: initial;
     position: initial;
     right: initial;
   }
+
   .logo-img {
     width: 54px;
     display: inline-block;
@@ -181,16 +263,19 @@ nav .brand-logo {
     -webkit-text-stroke-width: 0.15vw;
     -webkit-text-stroke-color: #F4F2ED;
   }
+
   h1 {
     font-size: 10vw;
     font-weight: 500;
   }
+
   .skills-aside {
     height: calc(100vh - 84px);
     overflow-y: auto;
     position: fixed;
     right: 0 !important;
   }
+
   .logo-img {
     width: 64px;
     display: inline-block;
@@ -204,16 +289,19 @@ nav .brand-logo {
     -webkit-text-stroke-width: 0.1vw;
     -webkit-text-stroke-color: #F4F2ED;
   }
+
   h1 {
     font-size: 8vw;
     font-weight: 500;
   }
+
   .skills-aside {
     height: calc(100vh - 84px);
     overflow-y: auto;
     position: fixed;
     right: 0 !important;
   }
+
   .logo-img {
     width: 64px;
     display: inline-block;
@@ -227,16 +315,19 @@ nav .brand-logo {
     -webkit-text-stroke-width: 0.05vw;
     -webkit-text-stroke-color: #F4F2ED;
   }
+
   h1 {
     font-size: 6vw;
     font-weight: 500;
   }
+
   .skills-aside {
     height: calc(100vh - 84px);
     overflow-y: auto;
     position: fixed;
     right: 0 !important;
   }
+
   .logo-img {
     width: 64px;
     display: inline-block;
