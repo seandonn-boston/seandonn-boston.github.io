@@ -95,6 +95,11 @@ body, nav, main, .card {
   color: #3B3A40;
 }
 
+.card-content:hover {
+  background-color: #FF4C7A;
+  color: #F4F2ED;
+}
+
 .intro {
   transform:  rotateX(45deg) /* Rotates an element around the horizontal axis */
               rotateY(45deg) /* Rotates an element around the vertical axis */
