@@ -10,10 +10,16 @@ $(() => {
   // });
   // Hovering over the word "Sean" will make my pictyure appear
   $('.hover-link').hover(
-  function() {
-    $('.sean').addClass('active')
-  }, function() {
-    $('.sean').removeClass('active');
-  }
-);
+    function() {
+      $('.sean').addClass('active')
+    }, function() {
+      $('.sean').removeClass('active');
+    }
+  );
+
+  $(document).ready(
+    function(){
+      $('.materialboxed').materialbox();
+    }
+  );
 })

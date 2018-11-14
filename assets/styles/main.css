@@ -141,12 +141,20 @@ body {
   margin-bottom: 32px;
 }
 
-#about-section, .skills-section, .code-section, .contact-section {
+#about-section, .skills-section, .code-section, .design-section, .contact-section {
   padding-top: 80px;
+}
+
+.skills, .code, .design, .icons {
+  padding-top: 1rem;
 }
 
 .card a {
   color: #FF4C7A !important;
+}
+
+.design-img {
+  margin: .5rem 0 1rem 0;
 }
 
 .btn {
