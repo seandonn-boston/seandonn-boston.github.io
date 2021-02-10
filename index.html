@@ -1,265 +1,634 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>SeanDonn.io</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="assets/styles/materialize.min.css"  media="screen,projection"/>
-      <!--Import font face -->
-      <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-      <!-- seandonn.io CSS -->
-      <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
-    </head>
-    <body>
-      <div class="nav-section">
-        <div class="navbar-fixed row">
-          <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo left">
-                <img class="logo-img" src="assets/images/sd-logo-white.svg" alt="Sean Donnellan's Logo">
-              </a>
-              <a href="#" data-target="mobile-collapse" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-              <ul class="left hide-on-med-and-down">
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#code-section">Code</a></li>
-                <li><a href="#design-section">Design</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-              </ul>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="assets/docs/SeanDonnellanResume.pdf" class="waves-effect waves-light btn" target="_blank">Resume<i class="material-icons right">file_download</i></a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <ul class="sidenav" id="mobile-collapse">
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#skills-section">Skills</a></li>
-          <li><a href="#code-section">Code</a></li>
-          <li><a href="#design-section">Design</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-          <li><a href="#skills-section" class="hide-on-med-and-up">Skills</a></li>
-          <li><a href="assets/docs/SeanDonnellanResume.pdf" class="waves-effect waves-light btn" target="_blank">Resume<i class="material-icons right">file_download</i></a></li>
-        </ul>
+  <head>
+    <title>Sean Donnellan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/styles/materialize.min.css"
+      media="screen,projection"
+    />
+    <!--Import font face -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <!-- seandonn.io CSS -->
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="nav-section">
+      <div class="navbar-fixed row">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">
+              <img
+                class="logo-img"
+                src="assets/images/sd-logo-white.svg"
+                alt="Sean Donnellan's Logo"
+              />
+            </a>
+            <a
+              href="#"
+              data-target="mobile-collapse"
+              class="sidenav-trigger right"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#code-section">Code</a></li>
+              <li><a href="#design-section">Design</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a
+                  href="assets/docs/SeanDonnellanResume.pdf"
+                  class="waves-effect waves-light btn"
+                  target="_blank"
+                  >Resume<i class="material-icons right">file_download</i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <main>
-        <div class="row">
-          <div class="col s12 main-content">
-            <div class="container">
-              <div class="about-section">
-                <div class="intro-wrapper">
-                  <img class="responsive-img sean" src="assets/images/sean.png" alt="Profile picture of Sean">
-                  <h1 class="text-outliner intro">Hey, I'm <span class="hover-link">Sean</span>. I'm a Full Stack Web Developer and UX Designer equipped with a repertoire of seasoned coding and design skills. Currently on the lookout for Web Development roles in Boston.</h1>
-                </div>
-                <p class="col offset-s4 s8 about-p" id="about-section">I recently completed the Web Development Immersive course at General Assembly in Boston (Grad. August 2018). I have a B.A. in Graphic Design Communications, experience as a web developer and UI designer, a sociable personality, and I'm brimming with ideas.</p>
-                <p class="col offset-s4 s8 about-p">My professional career truly began after I graduated from Roger Williams University in December 2015 with a B.A. in Graphic Design Communication and minor in Web Development and Music. From there I moved to Stamford, CT, to work as an Associate Software Engineer at the headquarters of Gartner, the the world's leading research and advisory company. My work was primarily focused around Front End Web Development and UI Design, but I always felt as though my expertise was missing a crucial piece. After a while I left Gartner to pursue an aggressive education in Full Stack Web Development which lead me to General Assembly.</p>
-                <p class="col offset-s4 s8 about-p">Today, I’m equipped with a repertoire of seasoned coding and design skills, I’m cognizant of best practices, I’m brimming with ideas, and I’m cemented with realism. I am prepared for a challenging and exciting Full Stack Web Developer role in the Boston tech scene and I look forward to connecting with prospective companies hiring now. Let’s chat.</p>
+      <ul class="sidenav" id="mobile-collapse">
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#code-section">Code</a></li>
+        <li><a href="#design-section">Design</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#skills-section" class="hide-on-med-and-up">Skills</a></li>
+        <li>
+          <a
+            href="assets/docs/SeanDonnellanResume.pdf"
+            class="waves-effect waves-light btn"
+            target="_blank"
+            >Resume<i class="material-icons right">file_download</i></a
+          >
+        </li>
+      </ul>
+    </div>
+    <main>
+      <div class="row">
+        <div class="col s12 main-content">
+          <div class="container">
+            <div class="about-section">
+              <div class="intro-wrapper">
+                <img
+                  class="responsive-img sean"
+                  src="assets/images/sean.png"
+                  alt="Profile picture of Sean"
+                />
+                <h1 class="text-outliner intro">
+                  Hey, I'm <span class="hover-link">Sean</span>. I'm a Full
+                  Stack Web Developer and UX Designer equipped with a repertoire
+                  of seasoned coding and design skills. Currently on the lookout
+                  for Web Development roles in Boston.
+                </h1>
               </div>
-              <div class="skills-section" id="skills-section">
-                <div class="row">
-                  <h1 class="text-outliner col s12">Skills</h1>
-                  <div class="skills">
-                    <a href="#skills-section"><i class="devicon-react-original"></i></a>
-                    <a href="#skills-section"><i class="devicon-javascript-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-html5-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-css3-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-github-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-sass-original"></i></a>
-                    <a href="#skills-section"><i class="devicon-bootstrap-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-jquery-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-nodejs-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-ruby-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-rails-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-photoshop-line"></i></a>
-                    <a href="#skills-section"><i class="devicon-illustrator-line"></i></a>
-                    <a href="#skills-section"><i class="devicon-slack-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-postgresql-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-mongodb-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-heroku-original"></i></a>
-                    <a href="#skills-section"><i class="devicon-grunt-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-express-original"></i></a>
-                    <a href="#skills-section"><i class="devicon-atom-original"></i></a>
-                    <a href="#skills-section"><i class="devicon-git-plain"></i></a>
-                    <a href="#skills-section"><i class="devicon-ubuntu-plain"></i></a>
+              <p class="col offset-s4 s8 about-p" id="about-section">
+                I recently completed the Web Development Immersive course at
+                General Assembly in Boston (Grad. August 2018). I have a B.A. in
+                Graphic Design Communications, experience as a web developer and
+                UI designer, a sociable personality, and I'm brimming with
+                ideas.
+              </p>
+              <p class="col offset-s4 s8 about-p">
+                My professional career truly began after I graduated from Roger
+                Williams University in December 2015 with a B.A. in Graphic
+                Design Communication and minor in Web Development and Music.
+                From there I moved to Stamford, CT, to work as an Associate
+                Software Engineer at the headquarters of Gartner, the the
+                world's leading research and advisory company. My work was
+                primarily focused around Front End Web Development and UI
+                Design, but I always felt as though my expertise was missing a
+                crucial piece. After a while I left Gartner to pursue an
+                aggressive education in Full Stack Web Development which lead me
+                to General Assembly.
+              </p>
+              <p class="col offset-s4 s8 about-p">
+                Today, I’m equipped with a repertoire of seasoned coding and
+                design skills, I’m cognizant of best practices, I’m brimming
+                with ideas, and I’m cemented with realism. I am prepared for a
+                challenging and exciting Full Stack Web Developer role in the
+                Boston tech scene and I look forward to connecting with
+                prospective companies hiring now. Let’s chat.
+              </p>
+            </div>
+            <div class="skills-section" id="skills-section">
+              <div class="row">
+                <h1 class="text-outliner col s12">Skills</h1>
+                <div class="skills">
+                  <a href="#skills-section"
+                    ><i class="devicon-react-original"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-javascript-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-html5-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-css3-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-github-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-sass-original"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-bootstrap-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-jquery-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-nodejs-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-ruby-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-rails-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-photoshop-line"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-illustrator-line"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-slack-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-postgresql-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-mongodb-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-heroku-original"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-grunt-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-express-original"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-atom-original"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-git-plain"></i
+                  ></a>
+                  <a href="#skills-section"
+                    ><i class="devicon-ubuntu-plain"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div id="code-section" class="code-section">
+              <div class="row">
+                <h1 class="text-outliner">Code</h1>
+                <div class="code">
+                  <div class="col s12 m6">
+                    <div class="card medium sticky-action hoverable">
+                      <div
+                        class="card-image waves-effect waves-block waves-light"
+                      >
+                        <img
+                          class="activator"
+                          src="assets/images/burgerbuilder.png"
+                          alt="Family sitting in front of a TV"
+                        />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator"
+                          >Burger Builder<i class="material-icons right"
+                            >add</i
+                          ></span
+                        >
+                      </div>
+                      <div class="card-action">
+                        <a
+                          href="https://seandonn-boston.github.io/burger-builder/#/"
+                          target="_blank"
+                          >Live Site</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/burger-builder"
+                          target="_blank"
+                          >Front Repo</a
+                        >
+                        <a
+                          href="https://burger-builder-e4458.firebaseio.com/"
+                          target="_blank"
+                          >Firebase Backend</a
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title"
+                          >Burger Builder<i class="material-icons right"
+                            >close</i
+                          ></span
+                        >
+                        <p>
+                          A Burger Builder app - this app allows users to create
+                          accounts, build burgers dynamically, continue to
+                          checkout, fill out an order form, and place the a faux
+                          order (no financial transaction occurs). Only
+                          authenticated users are allowed to place orders and
+                          review their own order history.
+                        </p>
+                        <p>
+                          Built with React.js, Redux, Axios, React-Router,
+                          Firebase, Jest, and Enzyme
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card medium sticky-action hoverable">
+                      <div
+                        class="card-image waves-effect waves-block waves-light"
+                      >
+                        <img
+                          class="activator"
+                          src="assets/images/into.png"
+                          alt="Family sitting in front of a TV"
+                        />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator"
+                          >INTO<i class="material-icons right">add</i></span
+                        >
+                      </div>
+                      <div class="card-action">
+                        <a
+                          href="https://seandonn-boston.github.io/into-client/"
+                          target="_blank"
+                          >Live Site</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/into-client"
+                          target="_blank"
+                          >Front Repo</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/into-api"
+                          target="_blank"
+                          >Back Repo</a
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title"
+                          >INTO<i class="material-icons right">close</i></span
+                        >
+                        <p>
+                          Into examines user data of popular services like
+                          Spotify and Netflix to generate a 3x3 collage of that
+                          user's most listened to album covers and recently
+                          viewed tv shows or movies. The user can download the
+                          generated image or share to Twitter, Instagram,
+                          Tinder, and more.
+                        </p>
+                        <p>
+                          Built with Ruby on Rails, Heroku, Bootstrap, 3rd Party
+                          APIs, and Ember.js
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card medium sticky-action hoverable">
+                      <div
+                        class="card-image waves-effect waves-block waves-light"
+                      >
+                        <img
+                          class="activator"
+                          src="assets/images/jot.jpg"
+                          alt="Writing a to do list"
+                        />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator"
+                          >JOT<i class="material-icons right">add</i></span
+                        >
+                      </div>
+                      <div class="card-action">
+                        <a
+                          href="https://seandonn-boston.github.io/jot-client/"
+                          target="_blank"
+                          >Live Site</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/jot-client"
+                          target="_blank"
+                          >Front Repo</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/jot-api"
+                          target="_blank"
+                          >Back Repo</a
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title"
+                          >JOT<i class="material-icons right">close</i></span
+                        >
+                        <p>
+                          Jot is an app for users to quickly write down ideas
+                          and organize the order of those idea later - perfect
+                          for list keeping or writing lyrics to a song, simply
+                          drag and drop to reorder each individual line.
+                        </p>
+                        <p>
+                          Built with Ruby on Rails, Heroku, Bootstrap,
+                          Handlebars, and Javascript, among other languages
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card medium sticky-action hoverable">
+                      <div
+                        class="card-image waves-effect waves-block waves-light"
+                      >
+                        <img
+                          class="activator"
+                          src="assets/images/sserpdrow.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator"
+                          >SSERPDROW<i class="material-icons right"
+                            >add</i
+                          ></span
+                        >
+                      </div>
+                      <div class="card-action">
+                        <a
+                          href="https://seandonn-boston.github.io/sserpdrow-client/"
+                          target="_blank"
+                          >Live Site</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/sserpdrow-client"
+                          target="_blank"
+                          >Front Repo</a
+                        >
+                        <a
+                          href="https://github.com/seandonn-boston/sserpdrow-api"
+                          target="_blank"
+                          >Back Repo</a
+                        >
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title"
+                          >SSERPDROW<i class="material-icons right"
+                            >close</i
+                          ></span
+                        >
+                        <p>
+                          Sserpdrow is a barebones recreation of Wordpress.
+                          Created as a group project, Sserpdrow allows users to
+                          write and publish blogposts or webpages.
+                        </p>
+                        <p>
+                          Built with MongoDB, Mongoose, Handlebars, Bootstrap,
+                          Express.js, and more
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div id="code-section" class="code-section">
-                <div class="row">
-                  <h1 class="text-outliner">Code</h1>
-                  <div class="code">
-                    <div class="col s12 m6">
-                      <div class="card medium sticky-action hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="assets/images/burgerbuilder.png" alt="Family sitting in front of a TV">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator ">Burger Builder<i class="material-icons right">add</i></span>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://seandonn.io/burger-builder/#/" target="_blank">Live Site</a>
-                          <a href="https://github.com/seandonn-boston/burger-builder" target="_blank">Front Repo</a>
-                          <a href="https://burger-builder-e4458.firebaseio.com/" target="_blank">Firebase Backend</a>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title ">Burger Builder<i class="material-icons right">close</i></span>
-                          <p>A Burger Builder app - this app allows users to create accounts, build burgers dynamically, continue to checkout, fill out an order form, and place the a faux order (no financial transaction occurs). Only authenticated users are allowed to place orders and review their own order history.</p>
-                          <p>Built with React.js, Redux, Axios, React-Router, Firebase, Jest, and Enzyme</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m6">
-                      <div class="card medium sticky-action hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="assets/images/into.png" alt="Family sitting in front of a TV">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator ">INTO<i class="material-icons right">add</i></span>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://seandonn.io/into-client/#/" target="_blank">Live Site</a>
-                          <a href="https://github.com/seandonn-boston/into-client" target="_blank">Front Repo</a>
-                          <a href="https://github.com/seandonn-boston/into-api" target="_blank">Back Repo</a>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title ">INTO<i class="material-icons right">close</i></span>
-                          <p>Into examines user data of popular services like Spotify and Netflix to generate a 3x3 collage of that user's most listened to album covers and recently viewed tv shows or movies. The user can download the generated image or share to Twitter, Instagram, Tinder, and more.</p>
-                          <p>Built with Ruby on Rails, Heroku, Bootstrap, 3rd Party APIs, and Ember.js</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m6">
-                      <div class="card medium sticky-action hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="assets/images/jot.jpg" alt="Writing a to do list">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator">JOT<i class="material-icons right">add</i></span>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://seandonn.io/jot-client/#/" target="_blank">Live Site</a>
-                          <a href="https://github.com/seandonn-boston/jot-client" target="_blank">Front Repo</a>
-                          <a href="https://github.com/seandonn-boston/jot-api" target="_blank">Back Repo</a>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title ">JOT<i class="material-icons right">close</i></span>
-                          <p>Jot is an app for users to quickly write down ideas and organize the order of those idea later - perfect for list keeping or writing lyrics to a song, simply drag and drop to reorder each individual line.</p>
-                          <p>Built with Ruby on Rails, Heroku, Bootstrap, Handlebars, and Javascript, among other languages</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m6">
-                      <div class="card medium sticky-action hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="assets/images/sserpdrow.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator ">SSERPDROW<i class="material-icons right">add</i></span>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://seandonn.io/sserpdrow-client/#/" target="_blank">Live Site</a>
-                          <a href="https://github.com/seandonn-boston/sserpdrow-client" target="_blank">Front Repo</a>
-                          <a href="https://github.com/seandonn-boston/sserpdrow-api" target="_blank">Back Repo</a>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title ">SSERPDROW<i class="material-icons right">close</i></span>
-                          <p>Sserpdrow is a barebones recreation of Wordpress. Created as a group project, Sserpdrow allows users to write and publish blogposts or webpages.</p>
-                          <p>Built with MongoDB, Mongoose, Handlebars, Bootstrap, Express.js, and more</p>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div id="design-section" class="design-section">
+              <div class="row">
+                <h1 class="text-outliner">Design</h1>
+                <div class="design">
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Youth Group streetwear brand identity logo"
+                      alt="Youth Group streetwear brand identity logo"
+                      src="assets/images/youth____groupw-01.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Mixed Media poster design in advertisement of a photographer galley event Our Moving World"
+                      alt="Mixed Media poster design in advertisement of a photographer galley event Our Moving World"
+                      src="assets/images/our-moving-world.jpg"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Front Cover of New Modern Magazine"
+                      alt="Front Cover of New Modern Magazine"
+                      src="assets/images/New-Modern-Cover.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Album cover design for 'Blue Myth', a fake album"
+                      alt="Album cover design for 'Blue Myth', a fake album"
+                      src="assets/images/Blue_Myth_Front_SFW.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Album cover design for 'Dark Matter', by Maddison McFerrin"
+                      alt="Album cover design for 'Dark Matter', by Maddison McFerrin"
+                      src="assets/images/Dark_Matter_Front_SFW.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Album cover design for 'Electronic Music in Yellow, Red Sharp, and Diminished Blue', various artists"
+                      alt="Album cover design for 'Electronic Music in Yellow, Red Sharp, and Diminished Blue', various artists"
+                      src="assets/images/EMIYRSADB_Front_SFW.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Lookbook poster advertisement for an extreme sports company"
+                      alt="Lookbook poster advertisement for an extreme sports company"
+                      src="assets/images/Boards_A.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Concert poster, event: Ignition"
+                      alt="Concert poster, event: Ignition"
+                      src="assets/images/ignition.jpg"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Venue poster with upcoming monthly lineup"
+                      alt="Venue poster with upcoming monthly lineup"
+                      src="assets/images/final3.jpg"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="New Modern magazine spread design - Daft Punk"
+                      alt="New Modern magazine spread design - Daft Punk"
+                      src="assets/images/Daft-Punk-crop.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="New Modern magazine spread design - Flume"
+                      alt="New Modern magazine spread design - Flume"
+                      src="assets/images/Flume-crop.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="New Modern magazine spread design - Holy Ghost"
+                      alt="New Modern magazine spread design - Holy Ghost"
+                      src="assets/images/Holy-Ghost-crop.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="New Modern magazine spread design - LCD SoundSystem"
+                      alt="New Modern magazine spread design - LCD SoundSystem"
+                      src="assets/images/LCD-Soundsystem-crop.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="New Modern magazine spread design - Table of Contents"
+                      alt="New Modern magazine spread design - Table of Contents"
+                      src="assets/images/Table-of-Contents-crop.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Infographic Poster"
+                      alt="Infographic Poster"
+                      src="assets/images/My-Wednesday.png"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Music Artist and DJ, Rave-N, poster"
+                      alt="Music Artist and DJ, Rave-N, poster"
+                      src="assets/images/Rave-N.jpg"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="Typography assignment"
+                      alt="Typography assignment"
+                      src="assets/images/SeanDonAdvType_Assignment1.gif"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="'Senior Graphic Design and Exhibition and Reception' event poster"
+                      alt="'Senior Graphic Design and Exhibition and Reception' event poster"
+                      src="assets/images/SFW.gif"
+                    />
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <img
+                      class="design-img responsive-img materialboxed"
+                      data-caption="The Legend of Zelda: Twilight Princess poster"
+                      alt="The Legend of Zelda: Twilight Princess poster"
+                      src="assets/images/Twilight_Princess_Portal.jpg"
+                    />
                   </div>
                 </div>
               </div>
-              <div id="design-section" class="design-section">
-                <div class="row">
-                  <h1 class="text-outliner">Design</h1>
-                  <div class="design">
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Youth Group streetwear brand identity logo" alt="Youth Group streetwear brand identity logo" src="assets/images/youth____groupw-01.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Mixed Media poster design in advertisement of a photographer galley event Our Moving World" alt="Mixed Media poster design in advertisement of a photographer galley event Our Moving World" src="assets/images/our-moving-world.jpg">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Front Cover of New Modern Magazine" alt="Front Cover of New Modern Magazine" src="assets/images/New-Modern-Cover.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Album cover design for 'Blue Myth', a fake album" alt="Album cover design for 'Blue Myth', a fake album" src="assets/images/Blue_Myth_Front_SFW.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Album cover design for 'Dark Matter', by Maddison McFerrin" alt="Album cover design for 'Dark Matter', by Maddison McFerrin" src="assets/images/Dark_Matter_Front_SFW.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Album cover design for 'Electronic Music in Yellow, Red Sharp, and Diminished Blue', various artists" alt="Album cover design for 'Electronic Music in Yellow, Red Sharp, and Diminished Blue', various artists" src="assets/images/EMIYRSADB_Front_SFW.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Lookbook poster advertisement for an extreme sports company" alt="Lookbook poster advertisement for an extreme sports company" src="assets/images/Boards_A.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Concert poster, event: Ignition" alt="Concert poster, event: Ignition" src="assets/images/ignition.jpg">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Venue poster with upcoming monthly lineup" alt="Venue poster with upcoming monthly lineup" src="assets/images/final3.jpg">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="New Modern magazine spread design - Daft Punk" alt="New Modern magazine spread design - Daft Punk" src="assets/images/Daft-Punk-crop.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="New Modern magazine spread design - Flume" alt="New Modern magazine spread design - Flume" src="assets/images/Flume-crop.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="New Modern magazine spread design - Holy Ghost" alt="New Modern magazine spread design - Holy Ghost" src="assets/images/Holy-Ghost-crop.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="New Modern magazine spread design - LCD SoundSystem" alt="New Modern magazine spread design - LCD SoundSystem" src="assets/images/LCD-Soundsystem-crop.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="New Modern magazine spread design - Table of Contents" alt="New Modern magazine spread design - Table of Contents" src="assets/images/Table-of-Contents-crop.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Infographic Poster" alt="Infographic Poster" src="assets/images/My-Wednesday.png">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Music Artist and DJ, Rave-N, poster" alt="Music Artist and DJ, Rave-N, poster" src="assets/images/Rave-N.jpg">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="Typography assignment" alt="Typography assignment" src="assets/images/SeanDonAdvType_Assignment1.gif">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="'Senior Graphic Design and Exhibition and Reception' event poster" alt="'Senior Graphic Design and Exhibition and Reception' event poster" src="assets/images/SFW.gif">
-                    </div>
-                    <div class="col s12 m6 l4">
-                      <img class="design-img responsive-img materialboxed" data-caption="The Legend of Zelda: Twilight Princess poster" alt="The Legend of Zelda: Twilight Princess poster" src="assets/images/Twilight_Princess_Portal.jpg">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="contact-section" class="contact-section">
-                <div class="row">
-                  <h1 class="text-outliner col s12">Contact</h1>
-                  <div class="icons">
-                    <a href="mailto:sean@seandonn.io?Subject=I%20visited%20your%20website%20and%20would%20like%20to%20get%20in%20touch"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:1-603-714-1933"><i class="fas fa-phone"></i></a>
-                    <a href="https://www.linkedin.com/in/seandonn/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/seandonn-boston"><i class="fab fa-github"></i></a>
-                    <a href="https://www.behance.net/seandonn"><i class="fab fa-behance"></i></a>
-                  </div>
+            </div>
+            <div id="contact-section" class="contact-section">
+              <div class="row">
+                <h1 class="text-outliner col s12">Contact</h1>
+                <div class="icons">
+                  <a
+                    href="mailto:sean@seandonn.io?Subject=I%20visited%20your%20website%20and%20would%20like%20to%20get%20in%20touch"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                  <a href="tel:1-603-714-1933"><i class="fas fa-phone"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/seandonn/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/seandonn-boston" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://www.behance.net/seandonn" target="_blank"
+                    ><i class="fab fa-behance"></i
+                  ></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="assets/scripts/materialize.min.js"></script>
-      <!-- seandonn.io JS -->
-      <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
-    </body>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script
+      type="text/javascript"
+      src="assets/scripts/materialize.min.js"
+    ></script>
+    <!-- seandonn.io JS -->
+    <script
+      src="assets/scripts/index.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+  </body>
 </html>
